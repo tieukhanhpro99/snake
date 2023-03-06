@@ -128,3 +128,13 @@ def game_loop():
 # Thoát game và tắt pygame
 pygame.quit()
 quit()
+
+def message(msg, color):
+mesg = font.render(msg, True, color)
+screen.blit(mesg, [screen_width / 6, screen_height / 3])
+
+snake_block = 10
+snake_speed = 30
+clock = pygame.time.Clock()
+
+game_loop()
